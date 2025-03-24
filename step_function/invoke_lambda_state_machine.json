@@ -1,0 +1,11 @@
+{
+  "Comment": "Lambdaを呼び出すステートマシン",
+  "StartAt": "InvokeLambda",
+  "States": {
+    "InvokeLambda": {
+      "Type": "Task",
+      "Resource": "ArnOfLambda",
+      "End": true
+    }
+  }
+}
